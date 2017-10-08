@@ -1,0 +1,44 @@
+body {
+	background-color: #303030;
+	color: white;
+}
+.navbar {
+	padding: 0;
+	background-color: #303030;
+}
+.navbar-brand{
+	padding: 10px 0px 10px 0px;
+}
+.nav-item {
+	padding: 8px 7px;
+}
+.active {
+	background-color: #025BA0;
+}
+.card {
+	background-color: #0F2435;
+	border: none;
+}
+.section {
+	display: none;
+}
+.activeSection {
+	display: block;
+}
+hr {
+	border-color: #0F2435;
+}
+.col a:link, .col a:visited, .col a:active {
+	color: #30A3FC;
+}
+.btn-primary {
+	background-color: #025BA0;
+	border-color: #025BA0;
+}
+.contactIcon {
+	width: 50px;
+	height: 50px;
+}
+.handshake {
+	background: url(/handshake.jpg);
+}
