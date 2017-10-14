@@ -8,7 +8,7 @@
 	<!-- Bootstrap Cores
     ================================================== -->
     <!-- CDN versions of jQuery and Popper.js -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/	jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<!--  Bootstrap CDN cached, compiled CSS and JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -23,15 +23,18 @@
 </head>
 
 <body>
+
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
-			<!-- Title -->
-		    <span class="navbar-brand">Nicolas San Jose</span>
-		    <!-- Device Collapse Button -->
-		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		    </button>
+			<div class="navbar-header" style="width:100%;">
+				<!-- Title -->
+			    <span class="navbar-brand">Nicolas San Jose</span>
+			    <!-- Device Collapse Button -->
+			    <button class="navbar-toggler custom-toggler" style="float:right;" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			    </button>
+			</div>
 		    <!-- Menu -->
 		    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 			    <ul class="navbar-nav ml-auto">
@@ -41,7 +44,7 @@
 				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionTwo" href="#">
 				    	Resume
 				    </a></li>
-				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionTwo" href="#footer">
+				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionThree" href="#">
 				    	Contact
 				    </a></li>
 			    </ul>
@@ -49,22 +52,25 @@
 	    </div>
     </nav>
 
-    <div id="Home" style="padding-top: 45px;"></div>
-    <!--
+
+    <div id="Home" style="padding-top: 55px;"></div>
+	<!--	
     <img class="topDivider" src="images/topDivider.svg"/>
 	-->
 
     <!-- Content -->
-    <div class="container-fluid" style="padding:0">
+    <div id="content" class="container-fluid" style="padding:0">
     	<!-- Accordion -->
 	    <div id="accordion">
 	    	<!-- Portfolio -->
 	    	<div class="card">
 	    		<div class="container">
 	    			<div id="sectionOne" class="section activeSection">
-	    				<hr><hr>
+	    				<br>
+						<h1>Portfolio</h1>
+						<hr>
 
-	    				<!-- PROJECT TEMPLATE
+						<!-- PROJECT PREVIEW TEMPLATE
 					    <div class="row">
 					    	<div class="col-md-7">
 						       	<a href="#">
@@ -80,54 +86,81 @@
 					   	<hr>
 						-->
 
-	    				<!-- Project One -->
-					    <div class="row">
+	    				<!-- Project Preview -->
+					    <div id="sectionFiveHeader" class="row">
 					    	<div class="col-md-7">
-						       	<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+					    		<a class="proj-link" data-sectionID="sectionFive" href="javascript:;">
+						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewEngine.png" alt="">
+						       	</a>
 					        </div>
 					        <div class="col-md-5">
-						        <h3>Jetpack Joyride Clone</h3>
-						        <p>is a 2.5D endless side-scroller game.<br><br>
+					        	<a class="proj-link" data-sectionID="sectionFive" href="javascript:;">
+						        	<h3>DirectX 11 Graphics Engine</h3>
+						        </a>
+						        <p>is a 2.5D endless side-scroller, made with our team's graphics engine<br><br>
 						        	Team Size: 3 <br>
 						        	Tools: Visual Studio, C++, Direct3D 11, HLSL <br>
-						        	Course: Foundations of Game Graphics Programming <br>
-						        	Goal: to show the progress we make on our graphics engine. </p>
+						        	Course: Foundations of Game Graphics Programming </p>
 					        </div>
 				     	</div>
+				     	<div id="sectionFive" class="row col section">
+				     		<br>
+				     		<p>
+				     			This goal of this project was to learn about, by creating, the basics of a graphics engine. We started individually with model loading, textures, and lighting. Then we got together with a group of two or three other students and merged what we had to continue with new features. I continued with work on shadow mapping, transparency, and implementation of our level design while my teammates worked on normal mapping, post-processing, and particles. We would also then utilize our graphics features towards a game.
+				     		</p>
+				     	</div>
 					   	<hr>
-				    	<!-- Project Two -->
-					    <div class="row">
+				    	<!-- Project Preview -->
+					    <div id="sectionSixHeader" class="row">
 					    	<div class="col-md-7">
-						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRobots.png" alt="">
+					    		<a class="proj-link" data-sectionID="sectionSix" href="javascript:;">
+						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRobots.png" alt="">
+						       	</a>
 					        </div>
 					        <div class="col-md-5">
-						        <h3>The Adventures of Rob & Ots</h3>
+					        	<a class="proj-link" data-sectionID="sectionSix" href="javascript:;">
+						        	<h3>The Adventures of Rob & Ots</h3>
+						        </a>
 						        <p>is a 2.5D online cooperative platformer,  <br>
 						        	played by two, as robots of different talents working together to solve puzzles<br><br>
 						        Team Size: 4 <br>
 						        Tools: Unity, Visual Studio, C# <br>
-						        Course: Online Virtual Worlds and Simulations <br>
-						        Goal: to create a game capable of supporting players across a network.</p>
+						        Course: Online Virtual Worlds and Simulations </p>
 					        </div>
 				     	</div>
+				     	<div id="sectionSix" class="row col section">
+				     		<br>
+				     		<p>
+				     			Our goal with this project was to support players aross a network.  Our team consisted of one artist, one level designer, and two programmers. As one of the programmers, I worked on user interface, and networking such as a visual communication system and the unique class selection by the networked players. 
+				     		</p>
+				     	</div>
 					   	<hr>
-					   	<!-- Project Three -->
+					   	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
-						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRunner.png" alt="">
+					    		<a class="proj-link" data-sectionID="sectionSeven" href="javascript:;">
+						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRunner.png" alt="">
+						       	</a>
 					        </div>
 					        <div class="col-md-5">
-						        <h3>PolyRunner</h3>
+					        	<a class="proj-link" data-sectionID="sectionSeven" href="javascript:;">
+						        	<h3>PolyRunner</h3>
+						        </a>
 						        <p>is a VR 3D endless runner,<br>
 						        	played as a damaged alien spaceship escaping across the desert near Area 51<br><br>
 						        Team Size: 4 <br>
 						        Tools: Unity, Visual Studio, C#, OculusSDK <br>
-						        Course: Casual Game Development <br>
-						        Goal: to learn about VR integration into game engines and gameplay, developing for an Oculus Rift.</p>
+						        Course: Casual Game Development </p>
 					        </div>
 				     	</div>
-					   	<hr>
-					   	<!-- Project Four -->
+				     	<div id="sectionSeven" class="row col section">
+				     		<br>
+				     		<p>
+				     			Our team's goal for this game was to learn about VR integration into the game engine and gameplay. I worked on design and implementation of game systems such as player controls and procedural content generation.
+				     		</p>
+				     	</div>
+				     	<hr>
+				     	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
 						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewDolphin.png" alt="">
@@ -138,12 +171,11 @@
 						        	played as a dolphin with dreams of the stars and rocket fuel to spare<br><br>
 						        	Team Size: 4 <br>
 						        	Tools: Unity, Visual Studio, C# <br>
-						        	Course: Casual Game Development <br> 
-						        	Goal: to develop a casual game for Android phones or tablets.</p>
+						        	Course: Casual Game Development</p>
 					        </div>
 				     	</div> 
 				     	<hr>
-				     	<!-- Project Five -->
+				     	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
 						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewGTA.png" alt="">
@@ -154,12 +186,10 @@
 						        	played as a grandmother of conviction in her action packed escape of the nursing home<br><br>
 						        	Team Size: 3 <br>
 						        	Tools: Unity, Visual Studio, C# <br>
-						        	Course: Game Design and Development <br>
-						        	Goal: to experience developing a game in a team environment.</p>
+						        	Course: Game Design and Development</p>
 					        </div>
 				     	</div> 
-
-				     	<hr><hr>
+				     	<hr>
 	    			</div>
 	    		</div>
 	    	</div> <!-- Portfolio End -->
@@ -168,22 +198,24 @@
 	    	<div class="card">
 	    		<div class="container">
 	    			<div id="sectionTwo" class="section">
+	    				<br>
+	    				<h1>Resume</h1>
+	    				<hr>
 	    				<!-- Download Link -->
 	    				<div class="row">
 	    					<div class="col" style="text-align: center;">
-	    						<hr>
 			    				Download: 
 			    				[ <a href="resume/nicolasSanJoseResume.pdf" download> PDF </a> 
 			    				/ <a href="resume/nicolasSanJoseResume.docx" download> DOC </a> ]
-								<hr>
 	    					</div>
 	    				</div>
+	    				<hr>
 	    				<!-- HTML Resume -->
 	    				<!-- Education -->
 						<div class="row">
 							<div class="col">
 								<h4>Education</h4>
-								<hr>
+								<br>
 							</div>
 						</div>
 						<div class="row">
@@ -191,7 +223,7 @@
 								<b>Bachelor of Science in Game Design in Development</b>
 							</div>
 							<div class="col-md-2" style="text-align:right;">
-								Expected May, 2018
+								Expected 2018
 							</div>
 						</div>
 						<div class="row">
@@ -204,7 +236,8 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								Dean's List, Spring 2017
+								Presidential Scholarship <br>
+								Dean's List
 							</div>
 						</div> <!-- Education End -->
 						<hr> 
@@ -212,7 +245,7 @@
 						<div class="row">
 							<div class="col">
 								<h4>Relevant Coursework</h4>
-								<hr>
+								<br>
 							</div>
 						</div>
 						<div class="row">
@@ -232,7 +265,7 @@
 						<div class="row">
 							<div class="col">
 								<h4>Skills</h4>
-								<hr>
+								<br>
 							</div>
 						</div>
 						<div class="row">
@@ -254,14 +287,32 @@
 						<div class="row">
 							<div class="col">
 								<b>Graphics Programming:</b>
-									Phong Interpolation and Blinn-Phong Reflection, Deferred Shading and Lighting Pre-Pass, Texture Maps (normal, specular, opacity), Cascaded Shadow Mapping, Particle Emitters, Post Processing (motion blur, DoF, bloom)
+									Phong Shading and Blinn-Phong Reflection, Forward and Deferred Rendering, Texture Maps (normal, specular, opacity), Cascaded Shadow Mapping, Post Processing (bloom)
 							</div>
 						</div> <!-- Skills End -->
 						<!-- HTML Resume End -->
-						<hr><hr> 
+						<hr>
 	    			</div>
 	    		</div>
 	    	</div> <!-- Resume End -->
+
+	    	<!-- Contact -->
+	    	<div class="card">
+	    		<div class="container">
+	    			<div id="sectionThree" class="section">
+	    				<br>
+	    				<h1>Contact</h1>
+	    				<hr>
+	    				<div class="row">
+	    					<div class="col">
+	    						nicolasasanjose@gmail.com
+	    					</div>
+	    				</div>
+	    				<hr>
+	    			</div>
+	    		</div>
+	    	</div> <!-- Contact End -->
+
 	    </div> <!-- Accordion End -->
 	</div> <!-- Content Container End --> 
 
@@ -269,13 +320,13 @@
     <!-- <img class="botDivider" src="images/botDivider.svg"/> -->
     <div style="padding-top:24px; padding-bottom:24px;">
     	<div id="footer" class="container" style="text-align:right;">
-    		nicolasasanjose@gmail.com
+    		<!-- nicolasasanjose@gmail.com -->
 			<span style="padding-right:50px;"></span>
-			<a href="mailto:nicolasasanjose@gmail.com">
+			<a href="mailto:nicolasasanjose@gmail.com" target="_blank">
 				<img src="images/iconEmail.png" class="rounded" style="height:40px; width:40px;"/>
 			</a>
 			<span style="padding-right:13px;"></span>
-			<a href="https://app.joinhandshake.com/users/6917713">
+			<a href="https://app.joinhandshake.com/users/6917713" target="_blank">
 				<img src="images/iconHandshake.jpg" class="rounded" style="height:40px; width:40px;"/>
 			</a>
     	</div>
