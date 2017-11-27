@@ -5,21 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap Cores
-    ================================================== -->
-    <!-- CDN versions of jQuery and Popper.js -->
-	<script src="https://code.jquery.com/	jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Bootstrap jQuery and Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<!--  Bootstrap CDN cached, compiled CSS and JS -->
+	<!--  Bootstrap CSS and JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    
-	<!-- ICON 
-	<link rel="icon" href="../../favicon.ico"> 
-	-->
+
 	<title> Nicolas San Jose </title>
-	<link rel="stylesheet" href="css/indexCSS.css">
-	<script type="text/javascript" src="js/indexJS.js"></script>
+	<link rel="stylesheet" href="css/custom-css.css">
+	<script type="text/javascript" src="js/custom-js.js"></script>
 </head>
 
 <body>
@@ -27,7 +22,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
-			<div class="navbar-header" style="width:100%;">
+			<div class="navbar-header">
 				<!-- Title -->
 			    <span class="navbar-brand">Nicolas San Jose</span>
 			    <!-- Device Collapse Button -->
@@ -38,13 +33,13 @@
 		    <!-- Menu -->
 		    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 			    <ul class="navbar-nav ml-auto">
-			    	<li class="nav-item active"><a class="nav-link" data-sectionID="sectionOne" href="#">
+			    	<li class="nav-item active"><a class="nav-link" data-sectionID="sectionPortfolio" href="#">
 				    	Portfolio
 				    </a></li>
-				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionTwo" href="#">
+				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionResume" href="#">
 				    	Resume
 				    </a></li>
-				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionThree" href="#">
+				    <li class="nav-item"><a class="nav-link" data-sectionID="sectionContact" href="#">
 				    	Contact
 				    </a></li>
 			    </ul>
@@ -52,144 +47,124 @@
 	    </div>
     </nav>
 
-
+	<!-- Header Padding -->
     <div id="Home" style="padding-top: 55px;"></div>
-	<!--	
-    <img class="topDivider" src="images/topDivider.svg"/>
-	-->
 
     <!-- Content -->
     <div id="content" class="container-fluid" style="padding:0">
-    	<!-- Accordion -->
 	    <div id="accordion">
+
 	    	<!-- Portfolio -->
 	    	<div class="card">
 	    		<div class="container">
-	    			<div id="sectionOne" class="section activeSection">
+	    			<div id="sectionPortfolio" class="section activeSection">
 	    				<br>
 						<h1>Portfolio</h1>
 						<hr>
 
-						<!-- PROJECT PREVIEW TEMPLATE
+	    				<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
-						       	<a href="#">
-						       		<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-						       	</a>
+					       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/preview-ori-engine-small.jpg" alt="">
 					        </div>
 					        <div class="col-md-5">
-						        <h3>Project One</h3>
-						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-						        <a class="btn btn-primary" href="#">View Project</a>
+					    		<a class="proj-link" data-sectionID="sectionOriEngine" href="javascript:;">
+									<h3 style="display:inline;">Ori Engine</h3>
+									<a href="https://github.com/nsanjose/Ori-Engine" target="_blank">
+										<img src="images/icon-github.png" class="link-icon rounded" style="width:30px; height:30px;"/>
+									</a>
+					       		</a>
+						        <p>
+						        	is my dive into graphics and game engine programming.<br><br>
+									<b>Used:</b> Visual Studio, C++, Direct3D 11 (with DirectXTK), HLSL<br>
+									<b>Description:</b> This was inspired by a group project in our Foundations of Game Graphics 
+									Programming course. I was not satisfied with stopping when we did, and started this 
+									project to continue. In addition to new features, I wanted to experience creating 
+									those that my other two teammates had done for our group.
+								</p>
+						        </p>
 					        </div>
-				     	</div>
-					   	<hr>
-						-->
-
-	    				<!-- Project Preview -->
-					    <div id="sectionFiveHeader" class="row">
-					    	<div class="col-md-7">
-					    		<a class="proj-link" data-sectionID="sectionFive" href="javascript:;">
-						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewEngine.png" alt="">
-						       	</a>
-					        </div>
-					        <div class="col-md-5">
-					        	<a class="proj-link" data-sectionID="sectionFive" href="javascript:;">
-						        	<h3>DirectX 11 Graphics Engine</h3>
-						        </a>
-						        <p>is a 2.5D endless side-scroller, made with our team's graphics engine<br><br>
-						        	Team Size: 3 <br>
-						        	Tools: Visual Studio, C++, Direct3D 11, HLSL <br>
-						        	Course: Foundations of Game Graphics Programming </p>
-					        </div>
-				     	</div>
-				     	<div id="sectionFive" class="row col section">
-				     		<br>
-				     		<p>
-				     			This goal of this project was to learn about, by creating, the basics of a graphics engine. We started individually with model loading, textures, and lighting. Then we got together with a group of two or three other students and merged what we had to continue with new features. I continued with work on shadow mapping, transparency, and implementation of our level design while my teammates worked on normal mapping, post-processing, and particles. We would also then utilize our graphics features towards a game.
-				     		</p>
-				     	</div>
+				     	</div> <!-- Project Preview End -->
 					   	<hr>
 				    	<!-- Project Preview -->
-					    <div id="sectionSixHeader" class="row">
+					    <div class="row">
 					    	<div class="col-md-7">
-					    		<a class="proj-link" data-sectionID="sectionSix" href="javascript:;">
-						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRobots.png" alt="">
-						       	</a>
+					       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/preview-robots-small.png" alt="">
 					        </div>
 					        <div class="col-md-5">
-					        	<a class="proj-link" data-sectionID="sectionSix" href="javascript:;">
-						        	<h3>The Adventures of Rob & Ots</h3>
-						        </a>
-						        <p>is a 2.5D online cooperative platformer,  <br>
-						        	played by two, as robots of different talents working together to solve puzzles<br><br>
-						        Team Size: 4 <br>
-						        Tools: Unity, Visual Studio, C# <br>
-						        Course: Online Virtual Worlds and Simulations </p>
+					        	<h3>The Adventures of Rob & Ots</h3>
+						        <p>
+									is a 2.5D online cooperative platformer game,<br>
+									played by two, as robots of different talents working together to solve puzzles.<br><br>
+									<b>Role:</b> Network and Gameplay Programmer, in a team of 4<br>
+									<b>Course:</b> Online Virtual Worlds and Simulations <br>
+									<b>Used:</b> Unity, Visual Studio, C# <br>
+									<b>Description:</b> Our goal for this game was to support players across a network, and create 
+									engaging cooperative gameplay. I programmed networking features such as a visual communication 
+									tool, character selection, and other bug-fixing.
+								</p>
 					        </div>
-				     	</div>
-				     	<div id="sectionSix" class="row col section">
-				     		<br>
-				     		<p>
-				     			Our goal with this project was to support players aross a network.  Our team consisted of one artist, one level designer, and two programmers. As one of the programmers, I worked on user interface, and networking such as a visual communication system and the unique class selection by the networked players. 
-				     		</p>
-				     	</div>
+				     	</div>	<!-- Project Preview End -->
 					   	<hr>
 					   	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
-					    		<a class="proj-link" data-sectionID="sectionSeven" href="javascript:;">
-						       		<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewRunner.png" alt="">
-						       	</a>
+						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/preview-runner-small.png" alt="">
 					        </div>
 					        <div class="col-md-5">
-					        	<a class="proj-link" data-sectionID="sectionSeven" href="javascript:;">
-						        	<h3>PolyRunner</h3>
-						        </a>
-						        <p>is a VR 3D endless runner,<br>
-						        	played as a damaged alien spaceship escaping across the desert near Area 51<br><br>
-						        Team Size: 4 <br>
-						        Tools: Unity, Visual Studio, C#, OculusSDK <br>
-						        Course: Casual Game Development </p>
+						        <h3>PolyRunner</h3>
+						        <p>
+									is an endless runner game for virtual reality devices,<br>
+									played as a damaged alien spaceship escaping across the desert near Area 51.<br><br>
+									<b>Role:</b> Gameplay Programmer, in a team of 4<br>
+									<b>Course:</b> Casual Game Development <br>
+									<b>Used:</b> Unity, Visual Studio, C#, Oculus SDK <br>
+									<b>Description:</b> Our goal for this game was to learn about virtual reality's integration into
+									gameplay and game engines. I worked on design and implementation of our systems for player controls
+									and procedural level generation.
+								</p>
 					        </div>
-				     	</div>
-				     	<div id="sectionSeven" class="row col section">
-				     		<br>
-				     		<p>
-				     			Our team's goal for this game was to learn about VR integration into the game engine and gameplay. I worked on design and implementation of game systems such as player controls and procedural content generation.
-				     		</p>
-				     	</div>
+				     	</div>	<!-- Project Preview End -->
 				     	<hr>
 				     	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
-						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewDolphin.png" alt="">
+						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/preview-dolphin-flip-small.png" alt="">
 					        </div>
 					        <div class="col-md-5">
 						        <h3>Dolphin Flip</h3>
-						        <p>is a 2D launcher mobile game, <br>
-						        	played as a dolphin with dreams of the stars and rocket fuel to spare<br><br>
-						        	Team Size: 4 <br>
-						        	Tools: Unity, Visual Studio, C# <br>
-						        	Course: Casual Game Development</p>
+						        <p>
+									is a 2D launcher game for mobile devices, <br>
+									played as a dolphin with dreams of the stars and rocket fuel to spare.<br><br>
+									<b>Role:</b> Gameplay Programmer, in a team of 4<br>
+									<b>Course:</b> Casual Game Development<br>
+									<b>Used:</b> Unity, Visual Studio, C#<br>
+									<b>Description:</b> Our goal for this game was to create a game for mobile devices, focusing on 
+									satisfying gameplay with simple mechanics that were easy to pick up and play. I programmed the
+									player controls, interactables and obstacles.
+								</p>
 					        </div>
-				     	</div> 
+				     	</div> <!-- Project Preview End -->
 				     	<hr>
 				     	<!-- Project Preview -->
 					    <div class="row">
 					    	<div class="col-md-7">
-						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/previewGTA.png" alt="">
+						       	<img class="img-fluid rounded mb-3 mb-md-0" src="images/preview-gta-small.png" alt="">
 					        </div>
 					        <div class="col-md-5">
 						        <h3>Granny Theft Auto</h3>
-						        <p>is a 2D side-scroller game. <br>
-						        	played as a grandmother of conviction in her action packed escape of the nursing home<br><br>
-						        	Team Size: 3 <br>
-						        	Tools: Unity, Visual Studio, C# <br>
-						        	Course: Game Design and Development</p>
+						        <p>
+									is a 2D side-scroller game,<br>
+									played as a grandmother of conviction in her action packed escape of the nursing home.<br><br>
+									<b>Role:</b> AI and Gameplay Programmer, in a team of 3<br>
+									<b>Course:</b> Game Design and Development<br>
+									<b>Used:</b> Unity, Visual Studio, C#<br>
+									<b>Description:</b> For this game, I programmed AI behaviours and combat mechanics.
+								</p>
 					        </div>
-				     	</div> 
-				     	<hr>
+				     	</div>	<!-- Project Preview End -->
+						 <hr>
+						 
 	    			</div>
 	    		</div>
 	    	</div> <!-- Portfolio End -->
@@ -197,7 +172,7 @@
 	    	<!-- Resume -->
 	    	<div class="card">
 	    		<div class="container">
-	    			<div id="sectionTwo" class="section">
+	    			<div id="sectionResume" class="section">
 	    				<br>
 	    				<h1>Resume</h1>
 	    				<hr>
@@ -205,92 +180,12 @@
 	    				<div class="row">
 	    					<div class="col" style="text-align: center;">
 			    				Download: 
-			    				[ <a href="resume/nicolasSanJoseResume.pdf" download> PDF </a> 
-			    				/ <a href="resume/nicolasSanJoseResume.docx" download> DOC </a> ]
+			    				[ <a href="resume/Nicolas San Jose Resume.pdf" download> PDF </a> 
+			    				/ <a href="resume/Nicolas San Jose Resume.docx" download> DOC </a> ]
 	    					</div>
 	    				</div>
 	    				<hr>
-	    				<!-- HTML Resume -->
-	    				<!-- Education -->
-						<div class="row">
-							<div class="col">
-								<h4>Education</h4>
-								<br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<b>Bachelor of Science in Game Design in Development</b>
-							</div>
-							<div class="col-md-2" style="text-align:right;">
-								Expected 2018
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								Rochester Institute of Technology
-							</div>
-							<div class="col-md-2" style="text-align:right;">
-								Rochester, NY
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								Presidential Scholarship <br>
-								Dean's List
-							</div>
-						</div> <!-- Education End -->
-						<hr> 
-						<!-- Relevant Coursework -->
-						<div class="row">
-							<div class="col">
-								<h4>Relevant Coursework</h4>
-								<br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								Foundations of Game Graphics Programming	<br>
-								Data Structures and Algorithms				<br>
-								College Physics, Analytical Geometry, Discrete Math
-							</div>
-							<div class="col-md-4">
-								AI for Game Environments					<br>
-								Online Virtual Worlds and Simulations		<br>
-								2D and 3D Animation and Asset Production
-							</div>
-						</div> <!-- Relevant Coursework End -->
-						<hr> 
-						<!-- Skills -->
-						<div class="row">
-							<div class="col">
-								<h4>Skills</h4>
-								<br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<b>Programming Languages:</b>
-									C++, C#, Java, HTML, CSS, JavaScript	<br>
-								<b>Game Engines:</b>
-									Unreal Engine 4, Unity					<br>
-								<b>Graphics APIs:</b>
-									Direct3D (with HLSL), OpenGL (with GLSL)<br>
-							</div>
-							<div class="col-md-4">
-								<b>VCS:</b>
-									Git										<br>
-								<b>IDE:</b>
-									Microsoft Visual Studio					
-							</div>
-						</div> 
-						<div class="row">
-							<div class="col">
-								<b>Graphics Programming:</b>
-									Phong Shading and Blinn-Phong Reflection, Physically Based Rendering, Forward and Deferred Rendering, Texture Maps (normal, opacity), Cascaded Shadow Mapping, Particle Emitters, Post Processing (bloom)
-							</div>
-						</div> <!-- Skills End -->
-						<!-- HTML Resume End -->
+						<object id="embedded-resume" data="resume/Nicolas San Jose Resume.pdf" type="application/pdf"></object>
 						<hr>
 	    			</div>
 	    		</div>
@@ -299,37 +194,144 @@
 	    	<!-- Contact -->
 	    	<div class="card">
 	    		<div class="container">
-	    			<div id="sectionThree" class="section">
+	    			<div id="sectionContact" class="section">
 	    				<br>
-	    				<h1>Contact</h1>
+						<h1>Contact</h1>
+						<hr>
+						<div class="center-div">
+							<a href="https://github.com/nsanjose" target="_blank"><img src="images/icon-github.png" class="link-icon rounded"/></a>
+							<a href="mailto:contact@nsanjose.com" target="_blank"><img src="images/icon-mail.png" class="link-icon rounded"/></a>
+							<a href="https://app.joinhandshake.com/users/6917713" target="_blank"><img src="images/icon-handshake.jpg" class="link-icon rounded"/></a>
+						</div>
+						<hr>
+						<form id="contactForm" class="center-div">
+								<div class="row">
+									<div class="form-group col-sm-6">
+	    								<label> Name </label> <span style="color:red;">*</span>
+	    								<input type="text" name="name" class="form-control" required />
+	    							</div> 
+	    							<div class="form-group col-sm-6">
+	    								<label> Email </label> <span style="color:red;">*</span>
+	    								<input type="email" name="email" class="form-control" required />
+	    							</div>
+	    						</div>
+	    						<div class="row">
+		    						<div class="form-group col-sm-12">
+										<label> Subject </label> <span style="color:red;">*</span>
+										<input type="text" name="_subject" class="form-control" required />
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12">
+										<label> Message </label> <span style="color:red;">*</span>
+										<textarea name="message" class="form-control" rows="6" required></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<button type="submit" class="btn btn-primary btn-block">Submit</button>
+									</div>
+								</div>
+								<input type="text" name="_gotcha" style="display:none" />
+						</form>
 	    				<hr>
-	    				<div class="row">
-	    					<div class="col">
-	    						nicolasasanjose@gmail.com
-	    					</div>
-	    				</div>
-	    				<hr>
+	    			</div>
+
+	    			<div id="sectionContactThanks" class="section">
+    					<br>
+    					<h1>Contact</h1>
+    					<hr>
+    					<p>Thanks! Your message has been sent.</p>
+    					<hr>
 	    			</div>
 	    		</div>
 	    	</div> <!-- Contact End -->
 
-	    </div> <!-- Accordion End -->
-	</div> <!-- Content Container End --> 
+			<!-- Ori Engine -->
+	    	<div class="card">
+	    		<div id="sectionOriEngine" class="container section">
+	    			<div class="row">
+	    				<div class="col">
+							<br>
+							<h1 style="display:inline;">Ori Engine</h1>
+							<a href="https://github.com/nsanjose/Ori-Engine" target="_blank">
+								<img src="images/icon-github.png" class="link-icon rounded"/>
+							</a>
+							<p>is my dive into graphics and game engine programming.</p>
+			    			<hr>
+	    				</div>
+			    	</div>	
+	    			<div class="row">
+					    <div class="col">
+					       	<img class="img-fluid rounded" src="images/preview-ori-engine-big.jpg" alt="">
+				        </div>
+			     	</div>
+			     	<hr>
+			     	<div class="row">
+			     		<div class="col">
+							<p>
+								<b>Using:</b> Visual Studio, C++, Direct3D 11 (with DirectXTK), HLSL<br>
+								<b>Description: </b>This was inspired by a group project in our Foundations of Game Graphics 
+								Programming course. I was not satisfied with stopping when we did, and started this 
+								project to continue. In addition to new features, I wanted to experience creating 
+								those that my other two teammates had done for our group.
+							</p>
+				    	</div>
+			     	</div>
+			     	<br>
+			     	<div class="row">
+			     		<div class="col-sm">
+					        <p> <b> Graphics </b> </p>
+			     			<hr>
+					        <p> 
+								Deferred Shading 					<br>
+					        	Physically Based Rendering (PBR)	<br>
+					        	Image Based Lighting (IBL)			<br>
+					        	Cascaded Shadow Mapping (CSM) 		<br>
+					        	Particle System (WIP)						<br>
+					        	Bloom								<br>
+					        	High Dynamic Range (HDR) Rendering 	<br>
+					        	Eye Adaptive Exposure				<br>
+					        	Tone Mapping 						<br>
+					        </p>
+					        <hr>
+						 </div>
+						 
+				     	<div class="col-sm">
+							<p> <b> Optimizations </b> </p>
+							<hr>
+							<p>	
+								Normal Buffer Encoding				<br>
+								Position Reconstruction from Depth	<br>
+								Blur Downsamples for Bloom (WIP)	<br>
+							</p>
+							<hr>
+			     		</div>
+				     	
+				     	<div class="col-sm">
+				     		<p> <b> Architecture </b> </p>
+			     			<hr>
+					        <p> 
+								Entity Component System (ECS)				<br>
+								Flyweight Pattern for Shared Components		<br>
+					        </p>
+					        <hr>
+				     	</div>
+				    
+			     	</div>
+	    		</div>
+		    </div>	<!-- Ori Engine End -->
+
+	    </div>
+	</div> <!-- Content End --> 
 
     <!-- Footer -->
-    <!-- <img class="botDivider" src="images/botDivider.svg"/> -->
     <div style="padding-top:24px; padding-bottom:24px;">
     	<div id="footer" class="container" style="text-align:right;">
-    		<!-- nicolasasanjose@gmail.com -->
-			<span style="padding-right:50px;"></span>
-			<a href="mailto:nicolasasanjose@gmail.com" target="_blank">
-				<img src="images/iconEmail.png" class="rounded" style="height:40px; width:40px;"/>
-			</a>
-			<span style="padding-right:13px;"></span>
-			<a href="https://app.joinhandshake.com/users/6917713" target="_blank">
-				<img src="images/iconHandshake.jpg" class="rounded" style="height:40px; width:40px;"/>
-			</a>
+			
     	</div>
-    </div>
+	</div>
+	
+	
 </body>
 </html>
