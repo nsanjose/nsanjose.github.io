@@ -47,21 +47,5 @@ $(document).ready(function() {
 		toggleActiveSection($(this).attr("data-sectionID"));
 		toggleInnerText(this, "Expand", "Collapse");
 	});
-
-	$("#contactForm").submit(function(event){
-		$.ajax({
-		    url: "https://formspree.io/nicolasasanjose@gmail.com", 
-		    method: "POST",
-		    data: $("#contactForm").serialize(),
-		    dataType: "json",
-		    success: function(){
-	    		console.log("Your form was successfully received!");
-	    		switchActiveSection("sectionContactThanks");
-	    	},
-	    	error: function(){
-	    		console.log("Failure. Try again.");
-	    	}
-		});
-	});
 });
 
